@@ -7,14 +7,14 @@ QUnit.test( "find the hottest", function( assert ) {
 
 QUnit.test( "find the coldest", function( assert ) {
 
-    var coldestPlace = findColdestPlace("Hi Joe, look at this tomorrow it will be really cold all over the country; in Cape Town 9, in George 7, in Port Elizabeth 5 and in Johannesburg 1")
+    var coldestPlace = findColdestPlace("Hi Joe, look at this tomorrow it will be really cold all over the country; in Cape Town 9, in George 7, in Port Elizabeth 5 and in Johannesburg -1")
 
     assert.equal( "Johannesburg", coldestPlace);
 });
 
 QUnit.test( "find places", function( assert ) {
 
-    var places = findPlaces("Hi Joe, look at this tomorrow it will be really cold all over the country; in Cape Town 9, in George 7, in Port Elizabeth 5 and in Johannesburg 1")
+    var places = findPlaces("Hi Joe, look at this tomorrow it will be really cold all over the country; in Cape Town 9, in George 7, in Port Elizabeth 5 and in Johannesburg -1")
 
     //????
     //places["Cape Town"] // returns tempurature
