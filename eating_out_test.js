@@ -1,4 +1,3 @@
-
 QUnit.test("find the out what team ate and drank", function(assert) {
 
 	var expectedPlaces = [
