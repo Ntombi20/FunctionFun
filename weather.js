@@ -17,6 +17,7 @@ function findPlaces(weatherString){
         var placeParts = placeString.split(" ");
 
         var placeName = placeParts[0];
+    
         if (isNaN(placeParts[1])){
             placeName = placeParts[0] + " " + placeParts[1];
         }
